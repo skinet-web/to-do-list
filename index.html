@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do-list</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="headerTitle">Just-Do-It</h1>
+    </header>
+    <div id="content">
+      <div id="navContent">
+        <button id="createProject">Create Project</button><br>
+        <span>Projects</span>
+        <select id="projectList">
+          <option id="defaultSelected" selected>Default</option>
+        </select>
+      </div>
+      <main id = "mainContent">
+      <button id="createTask">Create Task</button>
+      <div id = "taskList"></div>
+      
+      
+      </main>
+      <div id="modal" class="close" style="display: none">
+        <div class="modalCard">
+           <div class="modalHeader">
+            <div id="closeModalProject">X</div>
+            <h2 class="modalMainTitle">Add Project</h2>
+           </div> 
+           <div class="modalContent">
+            <form id="formInputProject">
+              <input id="titleInputProject" type="text" placeholder="Title">
+              <button id="buttonInputProject" class="button-40">Add</button>
+            </form>
+           </div>
+        </div>
+      </div>
+      <div id="modalTask" class="close" style="display: none">
+        <div class="modalCard">
+           <div class="modalHeader">
+            <div id="closeModalTask">X</div>
+            <h2 class="modalMainTitle">Add Task</h2>
+           </div> 
+           <div class="modalContent">
+            <form id="formInput">
+                <input id="titleInput" type="text" placeholder="Title">
+                <input id="descriptionInput" type="text" placeholder="Description">
+                <input id="dueDate" type="date" placeholder="date">
+                <button id="buttonInput" class="button-40">Send</button>
+            </form>                 
+           </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
