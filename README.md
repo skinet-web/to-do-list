@@ -1,10 +1,14 @@
 Project: Todo List
+
 A dynamically created ToDo list with vanilla JavaScript. The project is from The Odin Project curriculum.
+
 
 🔗 Live preview of the project is here.
 todolistbit.netlify.app
+
 Overview
 Features:
+
 You can add, delete projects and tasks.
 You can write description for the task, choose its date
 You can see from which project is the task, while watching its information.
